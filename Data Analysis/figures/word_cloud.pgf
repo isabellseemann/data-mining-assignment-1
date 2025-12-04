@@ -19,17 +19,13 @@
 %%   \import{<path to file>}{<filename>.pgf}
 %%
 %% Matplotlib used the following preamble
-%%   \def\mathdefault#1{#1}
-%%   \everymath=\expandafter{\the\everymath\displaystyle}
 %%   
 %%           \usepackage{amsmath}
 %%           \usepackage{siunitx}
 %%           \usepackage{fontspec}
 %%           \setmainfont{Times New Roman}
 %%       
-%%   \ifdefined\pdftexversion\else  % non-pdftex case.
-%%     \usepackage{fontspec}
-%%   \fi
+%%   \usepackage{fontspec}
 %%   \makeatletter\@ifpackageloaded{underscore}{}{\usepackage[strings]{underscore}}\makeatother
 %%
 \begingroup%
@@ -64,7 +60,7 @@
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=5.125000in,y=4.483333in,,base]{\color{textcolor}{\rmfamily\fontsize{21.600000}{25.920000}\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}Word Cloud}}%
+\pgftext[x=5.125000in,y=4.483333in,,base]{\color{textcolor}\rmfamily\fontsize{21.600000}{25.920000}\selectfont Word Cloud}%
 \end{pgfscope}%
 \end{pgfpicture}%
 \makeatother%
